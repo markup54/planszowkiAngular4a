@@ -1,0 +1,8 @@
+<div *ngIf="wyswietlanaPlanszowka">
+<h3>{{wyswietlanaPlanszowka.nazwa}}</h3>
+<img src="{{wyswietlanaPlanszowka.foto}}">
+<p>{{wyswietlanaPlanszowka.rodzaj}}</p>
+<p>Maksymalna liczba graczy <b>{{wyswietlanaPlanszowka.maxliczbaGraczy}}</b></p>
+<p>Minimalna liczba graczy <b>{{wyswietlanaPlanszowka.minliczbaGraczy}}</b></p>
+<p (click)="wyswietlanaPlanszowka.zwiekszLiczbePartii()">Liczba rozegranych partii {{wyswietlanaPlanszowka.liczbaRozegranychPartii}}</p>
+</div>
